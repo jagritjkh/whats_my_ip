@@ -57,7 +57,7 @@ class IPAddressWidget : GlanceAppWidget() {
                 context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
             val ipAddress =
                 remember(refreshCount) { Formatter.formatIpAddress(wifiManager.connectionInfo.ipAddress) }
-            Text(
+             Text(
                 text = "My IP",
                 modifier = GlanceModifier.padding(12.dp),
                 style = TextStyle(color = ColorProvider(Color.White))
